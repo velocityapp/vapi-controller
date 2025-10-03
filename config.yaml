@@ -1,0 +1,4 @@
+service: controller
+server:
+  port: "9091"
+  address: "0.0.0.0"
