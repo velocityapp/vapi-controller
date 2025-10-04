@@ -1,7 +1,8 @@
 package main
 
 import (
-	_ "vapp/controller/logger" // This line is necessary for go-swagger to find docs
+	_ "github.com/velocityapp/vlib-logger" // Initialize logger
+
 	"vapp/controller/routes"
 
 	_ "github.com/velocityapp/vlib-k8s" // Initialize k8s client
@@ -9,5 +10,6 @@ import (
 
 func main() {
 	// Entry point for the vapi-controller application
+
 	routes.Start()
 }
